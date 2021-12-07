@@ -1,0 +1,108 @@
+                    PROGRAM--1
+
+import java.io.*;
+import java.util.*;
+public class Vyshureddy
+{
+  public static void main(String arg[])
+   {
+    Scanner sc=new Scanner(System.in);
+    String A=sc.next();
+    String B=sc.next();
+    int length;
+    length=A.length()+B.length();
+    System.out.println(length);
+    int C=A.compareTo(B);
+    if(C>0)
+    {
+      System.out.println("yes");
+     }  
+     else
+    {
+     System.out.println("no");
+    }
+   System.out.println(A.substring(0,1).toUpperCase()+A.substring(1).toLowerCase()+" ");
+   System.out.println(B.substring(0,1).toUpperCase()+B.substring(1).toLowerCase());
+    
+  }
+  
+}
+
+OUTPUT:
+
+PS C:\vyshu> java Vyshureddy
+hello
+java
+9
+no
+Hello 
+Java
+        PROGRAM--2
+
+import java.util.*;
+import java.io.*;
+public class Substring
+{  
+   public static void main(String args[])
+  {
+   Scanner sc=new Scanner(System.in);
+   String s=sc.nextLine();
+   int a=sc.nextInt();
+   int b=sc.nextInt();
+   System.out.println(s.substring(a,b));
+  }
+}
+
+OUTPUT:
+
+C:\vyshu>javac Substring.java
+
+C:\vyshu>java Substring
+Helloworld
+3  7
+lowo
+   
+   
+                  PROGRAM--5
+import java.io.*;
+import java.util.*;
+public class Primenumber
+{
+   public static void main(String args[])
+   {
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    if(n==2||n==3)
+    {  
+      System.out.println("prime number");
+
+       }
+       else if(n%2==0)
+       {
+       System.out.println("not a prime number");
+       }
+       else if(n%3==0)
+     {
+      System.out.println("not a prime number");
+     }else if(n%4==0) 
+     {
+       System.out.println("not a prime number");
+     } else
+       {
+         System.out.println("prime number");
+       }
+       sc.close();
+     }
+     
+   }
+
+
+OUTPUT:
+
+C:\vyshu> javac Primenumber.java
+PS C:\vyshu> java Primenumber
+29
+prime number
+PS C:\vyshu> java Primenumber
+33
+not a prime number
